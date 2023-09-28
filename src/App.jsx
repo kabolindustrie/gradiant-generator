@@ -5,6 +5,7 @@ import AddRemoveColor from "./components/AddRemoveColor";
 import RangeAngle from "./components/inputs/RangeAngle";
 import SelectColor from "./components/inputs/SelectColor";
 import RangeColorPosition from "./components/inputs/RangeColorPosition";
+import OpenModalBtn from "./components/modal/OpenModalBtn";
 
 function App() {
   const gradientValues = useSelector(state => state.gradient)
@@ -31,7 +32,7 @@ function App() {
       <p className=""> Gradient global angle</p>
       <RangeAngle/>
 
-      {/* {OpenModalBtn} */}
+      <OpenModalBtn/>
     </div>
     <Gradient/>
   </div>
